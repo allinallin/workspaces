@@ -1,0 +1,18 @@
+{
+  "name": "@workspaces/demo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "scripts": {
+    "client": "yarn workspace @workspaces/client start",
+    "server": "yarn workspace @workspaces/server start",
+    "lib": "yarn workspace @workspaces/component-library build",
+    "storybook": "yarn workspace @workspaces/component-library storybook",
+    "start": "yarn lib && concurrently --kill-others \"yarn client\" \"yarn server\""
+  }
+}
