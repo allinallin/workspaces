@@ -1,4 +1,4 @@
-# Workspaces Demo
+# Workspaces Demo!
 
 This is a demo of a practical example of [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/).
 
